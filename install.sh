@@ -85,5 +85,17 @@ nvm alias default lts/*
 echo "📮 Installing Postman..."
 sudo snap install postman
 
+# ---------------------------
+# DBeaver
+# ---------------------------
+echo "🗄️ Installing DBeaver..."
+sudo snap install dbeaver-ce
+
+# ---------------------------
+# Flameshot
+# ---------------------------
+echo "📸 Installing Flameshot..."
+sudo apt install flameshot -y
+
 echo "✅ Setup complete! Please restart your terminal or run 'exec zsh'."
 echo "🚨 NOTE: You may need to log out and back in for Docker group changes to apply."
