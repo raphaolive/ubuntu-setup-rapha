@@ -13,7 +13,9 @@
     "setup",
     "docker",
     "zsh",
-    "dev-environment"
+    "dev-environment",
+    "node",
+    "yarn"
   ],
   "author": "Rapha",
   "license": "MIT"
