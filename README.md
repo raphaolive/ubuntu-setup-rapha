@@ -11,12 +11,13 @@ This repository contains a script to set up Rapha's full development environment
 - [NVM](https://github.com/nvm-sh/nvm) (Node Version Manager)
 - Latest **Node.js LTS** version
 - [Postman](https://www.postman.com/)
+- [DBeaver](https://dbeaver.io/)
+- [Flameshot](https://flameshot.org/)
 
 ## ⚙️ Installation
 
-1. Clone this repo and navigate to it:
+1. Download this repo, unzip and navigate to it:
    ```bash
-   git clone https://github.com/YOUR_USERNAME/ubuntu-setup-rapha.git
    cd ubuntu-setup-rapha
    ```
 2. Make install.sh excutable
