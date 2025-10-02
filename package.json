@@ -1,0 +1,20 @@
+{
+  "name": "ubuntu-setup-rapha",
+  "version": "1.0.0",
+  "description": "Custom Ubuntu setup script for Rapha's dev environment",
+  "bin": {
+    "install-ubuntu-setup-rapha": "./install.sh"
+  },
+  "scripts": {
+    "start": "./install.sh"
+  },
+  "keywords": [
+    "ubuntu",
+    "setup",
+    "docker",
+    "zsh",
+    "dev-environment"
+  ],
+  "author": "Rapha",
+  "license": "MIT"
+}
