@@ -3,8 +3,16 @@ set -e
 
 echo "🚀 Starting Ubuntu Dev Environment Setup for Rapha..."
 
-# Update & Upgrade
+# ---------------------------
+# Basic Tools
+# ---------------------------
+echo "🛠️ Installing Git, Curl, and build tools..."
 sudo apt update && sudo apt upgrade -y
+sudo apt install -y git curl wget build-essential
+
+# Install a base Node.js + npm so npm works (will replace later with nvm LTS)
+echo "📦 Installing temporary Node.js & npm..."
+sudo apt install -y nodejs npm
 
 # ---------------------------
 # Docker & Docker Compose
@@ -13,7 +21,6 @@ echo "🐳 Installing Docker and Docker Compose..."
 sudo apt-get remove docker docker-engine docker.io containerd runc -y || true
 sudo apt-get install \
     ca-certificates \
-    curl \
     gnupg \
     lsb-release -y
 
@@ -62,7 +69,7 @@ export RUNZSH=no
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 # ---------------------------
-# NVM & Node.js
+# NVM & Node.js (latest LTS)
 # ---------------------------
 echo "📦 Installing NVM and Node.js LTS..."
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash
