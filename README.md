@@ -29,4 +29,4 @@ This repository contains a script to set up Rapha's full development environment
    sh install.sh
    ```
 
-😎 Take a seat and relax while your basic dev enviroment gets done. Sometimes you make click enter or type your password to allow some instalation.
+😎 Take a seat and relax while your basic dev enviroment gets done. Sometimes you must click enter or type your password to allow some instalation.
