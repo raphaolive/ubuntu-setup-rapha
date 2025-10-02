@@ -62,12 +62,15 @@ export RUNZSH=no
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 # ---------------------------
-# NVM
+# NVM & Node.js
 # ---------------------------
-echo "📦 Installing NVM..."
+echo "📦 Installing NVM and Node.js LTS..."
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+nvm install --lts
+nvm use --lts
+nvm alias default lts/*
 
 # ---------------------------
 # Postman
