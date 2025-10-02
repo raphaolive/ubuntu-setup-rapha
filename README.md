@@ -18,3 +18,14 @@ This repository contains a script to set up Rapha's full development environment
    ```bash
    git clone https://github.com/YOUR_USERNAME/ubuntu-setup-rapha.git
    cd ubuntu-setup-rapha
+   ```
+2. Make install.sh excutable
+   ```bash
+   chmod +x install.sh
+   ```
+3. Run the installer with
+   ```
+   sh install.sh
+   ```
+
+😎 Take a seat and relax while your basic dev enviroment gets done. Sometimes you make click enter or type your password to allow some instalation.
